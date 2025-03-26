@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda XYZ - Registrar Producto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tienda XYZ</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Registrar Producto</h2>
+            <form id="productForm">
+                <div class="form-group">
+                    <label for="codigo_barras">Código de Barras:</label>
+                    <input type="file" id="codigo_barras" accept="image/*" capture="camera" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre del Producto:</label>
+                    <input type="text" id="nombre" placeholder="Nombre del producto" required>
+                </div>
+                <div class="form-group">
+                    <label for="precio">Precio:</label>
+                    <input type="number" id="precio" placeholder="Precio" required>
+                </div>
+                <div class="form-group">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" placeholder="Cantidad" required>
+                </div>
+                <div class="form-group">
+                    <label for="imagen">Imagen del Producto:</label>
+                    <input type="file" id="imagen" accept="image/*" required>
+                </div>
+                <button type="submit">Registrar Producto</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tienda XYZ</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
